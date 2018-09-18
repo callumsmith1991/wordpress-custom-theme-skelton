@@ -1,0 +1,124 @@
+/*
+Theme Name: Fore Digital Theme 1
+Theme URI: https://foredigital.co.uk
+Author: Callum Smith
+Author URI: https://callummsmith.co.uk
+Description: Fore Digital Theme 1
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Fore-Digital
+*/
+
+@import 'foundation/css/foundation';
+@import 'mobile';
+
+html {
+  height: 100%;
+  background: #444;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+body {
+  background-color: #444;
+}
+
+#site-header {
+  text-align: center;
+  h1 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+}
+
+#site-content {
+  background: #fff;
+  margin: 0 auto;
+  padding: 22px;
+  border-radius: 5px;
+}
+
+#site-footer {
+  background: #e6e6e6;
+  text-align: center;
+  font-size: 12px;
+  padding: 40px;
+  text-transform: uppercase;
+  clear: both;
+}
+
+#site-sidebar {
+  border: 22px;
+  text-align: left;
+  li {
+    list-style-type: none;
+  }
+  .widget {
+    padding: 20px;
+  }
+}
+
+#site-container {
+  width: 100%;
+}
+
+#header-menu {
+  text-align: center;
+  ul {
+    padding: 0px;
+  }
+  li {
+    display: inline-block;
+    padding: 0 8px;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+div.row {
+ max-width: 100rem;
+}
+
+.sub-menu {
+  left: -99999999999;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -ms-transition: opacity .4s ease-in-out;
+  -o-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+  width: 180px;
+  z-index: 99;
+  li {
+    width: 100%;
+    border-bottom: 1px solid black;
+    a {
+      text-align: left;
+    }
+  }
+}
+
+.menu-item:hover > .sub-menu {
+    left: auto;
+    opacity: 1;
+}
+
+section.post {
+  padding: 20px 0px;
+}
+
+.show-for-small {
+  display: none !important;
+}
+
+#toggleMenu {
+  margin: 0 auto;
+}
